@@ -1,0 +1,19 @@
+package Java;
+import javax.swing.JOptionPane;
+public class Cadastro {
+public static void main(String[] args) {
+	String nome = JOptionPane.showInputDialog("digite seu nome");
+	
+	String idadeStr = JOptionPane.showInputDialog("digite sua idade");
+	int idade = Integer.parseInt(idadeStr);
+	
+	String curso = JOptionPane.showInputDialog("digite seu curso");
+	
+	JOptionPane.showMessageDialog(null,
+			"alunos cadastrado com sucesso\n\n"+
+	"nome" + nome + "\n" +
+	"idade" + idade + "\n" +
+	"curso" + curso);
+	
+}
+}
